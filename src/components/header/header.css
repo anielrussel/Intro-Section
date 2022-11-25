@@ -1,0 +1,111 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 8rem 0 12rem;
+    width: auto;
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    padding: 3rem 12rem 0 0;
+}
+.header-text h1 {
+    color: var(--almost-black);
+    font-size: 80px;
+    padding-bottom: 3rem;
+}
+.header-text p {
+    color: var(--medium-gray);
+    font-size: var(--p-size);
+    line-height: 25px;
+    padding-bottom: 3rem;
+}
+.header-text button {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--almost-black);
+    color: white;
+    width: 160px;
+    height: 60px;
+    font-size: var(--p-size);
+    cursor: pointer;
+}
+.header-text button:hover {
+    background: transparent;
+    color: var(--almost-black);
+    border: 1px solid black;
+    font-weight: 500;
+
+}
+.header-brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.header-image {
+    padding-right: 5rem;
+    width: auto;
+}
+.header-image img {
+    margin-top: -5rem;
+    width: 480px;
+    height: auto;
+}
+.mobile {
+    display: none;
+}
+@media screen and (max-width: 425px) {
+    .header {
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        width: auto;
+    }
+    .header-image {
+        padding-right: 0;
+        width: auto;
+    }
+    .header-image img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        padding: 1rem;
+    }
+    .header-text h1 {
+        font-size: 40px;
+        padding-top: 1rem;
+    }
+    .header-text p {
+        color: var(--medium-gray);
+        font-size: var(--p-size);
+        line-height: 25px;
+        padding-bottom: 3rem;
+    }
+    .header-text button {
+        border: none;
+        border-radius: 10px;
+        background-color: var(--almost-black);
+        color: white;
+        width: 160px;
+        height: 60px;
+        font-size: var(--p-size);
+        cursor: pointer;
+    }
+    .header-brands {
+        margin-top: 3rem;
+    }
+}
